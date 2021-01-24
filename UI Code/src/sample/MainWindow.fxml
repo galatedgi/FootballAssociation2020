@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="MainBorder" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #303030;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <center>
+      <VBox prefHeight="395.0" prefWidth="400.0" style="-fx-background-color: #303030;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="95.0" prefWidth="342.0" text="Welcome To SoccerSystem!" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="50.0" left="70.0" right="50.0" top="75.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="80.0" layoutY="85.0" prefHeight="95.0" prefWidth="342.0" text="Created by PrettyBoyz Co." textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="50.0" left="70.0" right="50.0" />
+               </VBox.margin>
+            </Label>
+         </children></VBox>
+   </center>
+   <top>
+      <Pane fx:id="MainPane" onMouseDragged="#Drag" onMousePressed="#handle" prefHeight="35.0" prefWidth="500.0" style="-fx-background-color: #252525;" BorderPane.alignment="CENTER">
+         <children>
+            <Circle fx:id="CloseButton" fill="#ed1f1fde" layoutX="582.0" layoutY="18.0" onMousePressed="#CloseButton" radius="9.0" strokeType="INSIDE">
+               <stroke>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.4095238095238095">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </stroke>
+            </Circle>
+            <Label layoutX="10.0" layoutY="7.0" prefHeight="21.0" prefWidth="202.0" text="SoccerSystem - Pretty Boyz" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+         </children>
+      </Pane>
+   </top>
+   <left>
+      <ScrollPane fx:id="scrollpane" prefHeight="365.0" prefWidth="125.0" style="-fx-background-color: #252525;" stylesheets="@Scroll.css" BorderPane.alignment="CENTER">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="475.0" prefWidth="109.0">
+               <children>
+                  <VBox prefHeight="582.0" prefWidth="109.0" style="-fx-background-color: #303030; -fx-border-color: #252525;" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button fx:id="LoginButton" mnemonicParsing="false" onAction="#Logout" prefHeight="46.0" prefWidth="100.0" style="-fx-background-color: #303030; -fx-text-fill: #f0f0f0; -fx-border-color: #252525; -fx-border-radius: 15;" text="Logout">
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" top="10.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="TeamOwnerB" disable="true" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="100.0" style="-fx-background-color: #303030; -fx-text-fill: #f0f0f0; -fx-border-color: #252525; -fx-border-radius: 15;" text="Team Owner">
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="PlayerB" disable="true" layoutX="10.0" layoutY="56.0" mnemonicParsing="false" onAction="#ShowPlayerScreen" prefHeight="46.0" prefWidth="100.0" style="-fx-background-color: #303030; -fx-text-fill: #f0f0f0; -fx-border-color: #252525; -fx-border-radius: 15;" text="Player">
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="TeamManagerB" disable="true" layoutX="10.0" layoutY="102.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="100.0" style="-fx-background-color: #303030; -fx-text-fill: #f0f0f0; -fx-border-color: #252525; -fx-border-radius: 15;" text="Team Manager">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="CoachB" disable="true" layoutX="16.0" layoutY="189.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="100.0" style="-fx-background-color: #303030; -fx-text-fill: #f0f0f0; -fx-border-color: #252525; -fx-border-radius: 15;" text="Coach">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="FanB" disable="true" layoutX="11.0" layoutY="235.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="100.0" style="-fx-background-color: #303030; -fx-text-fill: #f0f0f0; -fx-border-color: #252525; -fx-border-radius: 15;" text="Fan">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="AssociationB" disable="true" layoutX="11.0" layoutY="281.0" mnemonicParsing="false" onAction="#ShowAssociationScreen" prefHeight="46.0" prefWidth="100.0" style="-fx-background-color: #303030; -fx-text-fill: #f0f0f0; -fx-border-color: #252525; -fx-border-radius: 15;" text="Association">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="RefereeB" disable="true" layoutX="16.0" layoutY="327.0" mnemonicParsing="false" onAction="#ShowRefereeScreen" prefHeight="46.0" prefWidth="100.0" style="-fx-background-color: #303030; -fx-text-fill: #f0f0f0; -fx-border-color: #252525; -fx-border-radius: 15;" text="Referee">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="AdminB" disable="true" layoutX="11.0" layoutY="378.0" mnemonicParsing="false" onAction="#ShowAssociationScreen" prefHeight="46.0" prefWidth="100.0" style="-fx-background-color: #303030; -fx-text-fill: #f0f0f0; -fx-border-color: #252525; -fx-border-radius: 15;" text="Admin">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children></AnchorPane>
+        </content>
+      </ScrollPane>
+   </left>
+</BorderPane>

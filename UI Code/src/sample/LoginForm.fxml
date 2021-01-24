@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="240.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Login">
+    <children>
+        <BorderPane prefHeight="245.0" prefWidth="500.0" style="-fx-background-color: #303030;">
+            <bottom>
+            </bottom>
+            <center>
+                <VBox prefHeight="262.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Label alignment="CENTER" prefHeight="17.0" prefWidth="195.0" text="Username" textFill="WHITE">
+                            <VBox.margin>
+                                <Insets left="150.0" right="150.0" top="50.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="UsernameField" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="20.0" style="-fx-background-radius: 15;">
+                            <VBox.margin>
+                                <Insets left="150.0" right="150.0" top="10.0" />
+                            </VBox.margin>
+                        </TextField>
+                        <Label alignment="CENTER" layoutX="160.0" layoutY="60.0" prefHeight="17.0" prefWidth="195.0" text="Password" textFill="WHITE">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets left="150.0" right="150.0" top="10.0" />
+                            </VBox.margin>
+                        </Label>
+                        <TextField fx:id="PasswordField" layoutX="160.0" layoutY="60.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="20.0" style="-fx-background-radius: 15;">
+                            <VBox.margin>
+                                <Insets left="150.0" right="150.0" top="10.0" />
+                            </VBox.margin>
+                        </TextField>
+                  <Button mnemonicParsing="false" onAction="#LoginAttempt" prefHeight="25.0" prefWidth="131.0" style="-fx-background-color: #303030; -fx-border-color: #252525; -fx-border-radius: 15;" text="Login" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets left="185.0" top="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                    </children>
+                </VBox>
+            </center>
+        </BorderPane>
+    </children>
+</AnchorPane>

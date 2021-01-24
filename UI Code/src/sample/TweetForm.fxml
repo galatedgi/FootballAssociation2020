@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="215.0" prefWidth="408.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Login">
+   <children>
+      <VBox prefHeight="215.0" prefWidth="420.0" style="-fx-background-color: #303030;">
+         <children>
+            <Label prefHeight="28.0" prefWidth="169.0" text="Write Your Tweet:" textFill="WHITE">
+               <VBox.margin>
+                  <Insets left="120.0" top="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <TextArea prefHeight="96.0" prefWidth="350.0" text="Enter here...">
+               <VBox.margin>
+                  <Insets left="75.0" right="75.0" top="15.0" />
+               </VBox.margin>
+            </TextArea>
+            <Button mnemonicParsing="false" prefHeight="33.0" prefWidth="116.0" style="-fx-background-color: #303030; -fx-border-color: #252525; -fx-border-radius: 15;" text="Submit" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="145.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="236.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RefGames">
+    <children>
+        <VBox prefHeight="236.0" prefWidth="420.0" style="-fx-background-color: #303030;">
+            <children>
+                <Label prefHeight="28.0" prefWidth="186.0" text="Scheduled Games:" textFill="WHITE">
+                    <VBox.margin>
+                        <Insets left="125.0" top="10.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font size="19.0" />
+                    </font>
+                </Label>
+                <Pane prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <TableView fx:id="GamesTable" layoutX="25.0" prefHeight="155.0" prefWidth="370.0">
+                            <columns>
+                                <TableColumn fx:id="DateCol" prefWidth="58.0" text="Date" />
+                                <TableColumn fx:id="StadiumCol" prefWidth="73.0" text="Stadium" />
+                                <TableColumn fx:id="HomeCol" prefWidth="76.0" text="Home Team" />
+                                <TableColumn fx:id="AwayCol" prefWidth="85.0" text="Away Team" />
+                                <TableColumn fx:id="EventsCol" prefWidth="77.0" text="Events" />
+                            </columns>
+                        </TableView>
+                    </children>
+                </Pane>
+                <HBox prefHeight="59.0" prefWidth="420.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#AddnewEvent" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #303030; -fx-border-color: #252525; -fx-border-radius: 15;" text="Add Event" textFill="WHITE">
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="50.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button layoutX="165.0" layoutY="10.0" mnemonicParsing="false" onAction="#ShowReport" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #303030; -fx-border-color: #252525; -fx-border-radius: 15;" text="Show Report" textFill="WHITE">
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="15.0" />
+                            </HBox.margin>
+                        </Button>
+                  <Button layoutX="205.0" layoutY="10.0" mnemonicParsing="false" onAction="#EndGame" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #303030; -fx-border-color: #252525; -fx-border-radius: 15;" text="End Game" textFill="WHITE">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </Button>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

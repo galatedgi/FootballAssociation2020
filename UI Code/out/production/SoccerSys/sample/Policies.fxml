@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="236.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Policies">
+    <children>
+        <VBox prefHeight="236.0" prefWidth="420.0" style="-fx-background-color: #303030;">
+            <children>
+                <Label prefHeight="28.0" prefWidth="186.0" text="Scheduling Policies:" textFill="WHITE">
+                    <VBox.margin>
+                        <Insets left="125.0" top="10.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font size="19.0" />
+                    </font>
+                </Label>
+                <Pane prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <TableView fx:id="PolicyTable" layoutX="25.0" prefHeight="155.0" prefWidth="370.0">
+                            <columns>
+                                <TableColumn fx:id="LeagueNameCol" prefWidth="58.0" text="League" />
+                                <TableColumn fx:id="NumCol" prefWidth="93.0" text="Num of games" />
+                        <TableColumn fx:id="WinCol" prefWidth="76.0" text="Win Value" />
+                        <TableColumn fx:id="TieCol" prefWidth="65.0" text="Tie Value" />
+                        <TableColumn fx:id="LossCol" prefWidth="77.0" text="Loss Value" />
+                            </columns>
+                        </TableView>
+                    </children>
+                </Pane>
+                <HBox prefHeight="59.0" prefWidth="420.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#AddnewSchedulingPolicy" prefHeight="25.0" prefWidth="133.0" style="-fx-background-color: #303030; -fx-border-color: #252525; -fx-border-radius: 15;" text="Change Scheculing Policy" textFill="WHITE">
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="80.0" />
+                            </HBox.margin>
+                        </Button>
+                  <Button layoutX="165.0" layoutY="10.0" mnemonicParsing="false" onAction="#AddnewScoringPolicy" prefHeight="13.0" prefWidth="116.0" style="-fx-background-color: #303030; -fx-border-color: #252525; -fx-border-radius: 15;" text="Change Scoring Policy" textFill="WHITE">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </Button>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

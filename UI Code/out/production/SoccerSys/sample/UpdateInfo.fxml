@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="205.0" prefWidth="419.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Login">
+    <children>
+        <BorderPane prefHeight="205.0" prefWidth="420.0" style="-fx-background-color: #303030;">
+            <bottom>
+                <HBox prefHeight="0.0" prefWidth="500.0" BorderPane.alignment="CENTER" />
+            </bottom>
+            <center>
+                <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Label alignment="CENTER" prefHeight="17.0" prefWidth="195.0" text="Full Name" textFill="WHITE">
+                            <VBox.margin>
+                                <Insets left="150.0" right="150.0" top="5.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Label>
+                        <TextField minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="20.0" style="-fx-background-radius: 15;">
+                            <VBox.margin>
+                                <Insets left="120.0" right="120.0" top="5.0" />
+                            </VBox.margin>
+                        </TextField>
+                        <Label alignment="CENTER" layoutX="160.0" layoutY="60.0" prefHeight="17.0" prefWidth="195.0" text="Birth Date" textFill="WHITE">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets left="150.0" right="150.0" top="5.0" />
+                            </VBox.margin>
+                        </Label>
+                        <DatePicker prefHeight="25.0" prefWidth="208.0">
+                            <VBox.margin>
+                                <Insets left="120.0" right="120.0" top="5.0" />
+                            </VBox.margin>
+                        </DatePicker>
+                        <Label alignment="CENTER" layoutX="160.0" layoutY="60.0" prefHeight="17.0" prefWidth="195.0" text="Position" textFill="WHITE">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets left="150.0" right="150.0" top="5.0" />
+                            </VBox.margin>
+                        </Label>
+                        <ChoiceBox prefHeight="25.0" prefWidth="190.0">
+                            <items>
+                                <FXCollections fx:factory="observableArrayList">
+                                    <String fx:value="GK" />
+                                    <String fx:value="CB" />
+                                    <String fx:value="LB" />
+                                    <String fx:value="RB" />
+                                    <String fx:value="CM" />
+                                    <String fx:value="RW" />
+                                    <String fx:value="LW" />
+                                    <String fx:value="CAM" />
+                                    <String fx:value="CF" />
+                                    <String fx:value="ST" />
+                                </FXCollections>
+                            </items>
+                            <VBox.margin>
+                                <Insets left="120.0" right="120.0" top="5.0" />
+                            </VBox.margin>
+                        </ChoiceBox>
+                    </children>
+                </VBox>
+            </center>
+        </BorderPane>
+    </children>
+</AnchorPane>

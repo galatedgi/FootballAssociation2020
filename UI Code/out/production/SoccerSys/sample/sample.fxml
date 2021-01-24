@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuBar prefHeight="32.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Help" />
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TabPane layoutY="33.0" prefHeight="369.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Team Owner">
+              <Pane>
+                  <children>
+                     <Button layoutX="170.0" layoutY="134.0" mnemonicParsing="false" text="Button" />
+                     <TableView layoutX="90.0" layoutY="70.0" prefHeight="200.0" prefWidth="376.0">
+                       <columns>
+                         <TableColumn prefWidth="75.0" text="C1" />
+                         <TableColumn prefWidth="75.0" text="C2" />
+                           <TableColumn prefWidth="75.0" text="C1" />
+                           <TableColumn prefWidth="75.0" text="C1" />
+                           <TableColumn prefWidth="75.0" text="C1" />
+                       </columns>
+                     </TableView>
+                  </children></Pane>
+          </Tab>
+          <Tab text="Player" />
+        </tabs>
+      </TabPane>
+   </children>
+</Pane>

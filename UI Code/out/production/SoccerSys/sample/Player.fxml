@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="365.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Player">
+   <children>
+      <BorderPane fx:id="MainBorder" prefHeight="365.0" prefWidth="420.0" style="-fx-background-color: #303030;">
+         <bottom>
+            <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#ShowRegisterScreen" prefHeight="94.0" prefWidth="139.0" style="-fx-background-color: #303030; -fx-border-color: #282828; -fx-text-fill: #ffffff; -fx-border-radius: 24;" text="Update Info">
+                     <HBox.margin>
+                        <Insets bottom="15.0" left="65.0" right="10.0" />
+                     </HBox.margin></Button>
+                  <Button alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#ShowTweetScreen" prefHeight="94.0" prefWidth="139.0" style="-fx-background-color: #303030; -fx-text-fill: #ffffff; -fx-border-color: #282828; -fx-border-radius: 24;" text="New Tweet" HBox.hgrow="NEVER">
+                     <HBox.margin>
+                        <Insets bottom="15.0" />
+                     </HBox.margin></Button>
+               </children>
+            </HBox>
+         </bottom>
+         <center>
+            <VBox prefHeight="217.0" prefWidth="408.0" BorderPane.alignment="CENTER" />
+         </center>
+         <top>
+            <Label fx:id="TopLabel" prefHeight="9.0" prefWidth="161.0" text="Player Section" textFill="WHITE" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="26.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets top="10.0" />
+               </BorderPane.margin>
+            </Label>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

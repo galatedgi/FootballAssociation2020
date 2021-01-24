@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="MainPane" onMouseDragged="#Drag" onMousePressed="#handle" prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ChangeScoringPolicy">
+    <children>
+        <BorderPane fx:id="MainBorder" prefHeight="400.0" prefWidth="500.0" style="-fx-background-color: #303030;">
+            <bottom>
+                <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#ChangePolicyAttempt" prefHeight="94.0" prefWidth="139.0" style="-fx-background-color: #303030; -fx-border-color: #282828; -fx-text-fill: #ffffff; -fx-border-radius: 24;" text="Submit">
+                            <HBox.margin>
+                                <Insets left="175.0" right="10.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font size="26.0" />
+                            </font></Button>
+                    </children>
+                </HBox>
+            </bottom>
+            <center>
+                <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Label prefHeight="43.0" prefWidth="265.0" text="New Scoring Policy:" textFill="WHITE">
+                            <font>
+                                <Font size="29.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets left="120.0" top="15.0" />
+                            </VBox.margin>
+                        </Label>
+                        <HBox prefHeight="73.0" prefWidth="500.0">
+                            <children>
+                                <Label prefHeight="39.0" prefWidth="105.0" text="Win Value:" textFill="WHITE">
+                                    <font>
+                                        <Font size="17.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="50.0" top="15.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <TextField fx:id="WinText" prefHeight="25.0" prefWidth="301.0" style="-fx-background-radius: 15;">
+                                    <HBox.margin>
+                                        <Insets left="5.0" top="22.0" />
+                                    </HBox.margin>
+                                </TextField>
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="74.0" prefWidth="500.0">
+                            <children>
+                                <Label prefHeight="39.0" prefWidth="105.0" text="Loss Value:" textFill="WHITE">
+                                    <font>
+                                        <Font size="17.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="47.0" top="15.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <TextField fx:id="LossText" prefHeight="25.0" prefWidth="301.0" style="-fx-background-radius: 15;">
+                                    <HBox.margin>
+                                        <Insets left="8.0" top="22.0" />
+                                    </HBox.margin>
+                                </TextField>
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="73.0" prefWidth="500.0">
+                            <children>
+                                <Label prefHeight="39.0" prefWidth="81.0" text="Tie Value:" textFill="WHITE">
+                                    <font>
+                                        <Font size="17.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="55.0" top="15.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <TextField fx:id="TieText" prefHeight="25.0" prefWidth="301.0" style="-fx-background-radius: 15;">
+                                    <HBox.margin>
+                                        <Insets left="25.0" top="22.0" />
+                                    </HBox.margin>
+                                </TextField>
+                            </children>
+                        </HBox>
+                    </children></VBox>
+            </center>
+            <top>
+                <Pane fx:id="TopPane" onMouseClicked="#handle" onMouseDragged="#Drag" prefHeight="35.0" prefWidth="500.0" style="-fx-background-color: #252525;" BorderPane.alignment="CENTER">
+                    <children>
+                        <Circle fx:id="CloseButton" fill="#ed1f1fde" layoutX="477.0" layoutY="18.0" onMouseClicked="#CloseButton" onMousePressed="#CloseButton" radius="9.0" strokeType="INSIDE">
+                            <stroke>
+                                <LinearGradient endX="1.0" endY="1.0" startX="0.4095238095238095">
+                                    <stops>
+                                        <Stop>
+                                            <color>
+                                                <Color />
+                                            </color>
+                                        </Stop>
+                                        <Stop offset="1.0">
+                                            <color>
+                                                <Color red="1.0" green="1.0" blue="1.0" />
+                                            </color>
+                                        </Stop>
+                                    </stops>
+                                </LinearGradient>
+                            </stroke>
+                        </Circle>
+                        <Label layoutX="10.0" layoutY="7.0" prefHeight="21.0" prefWidth="202.0" text="Add new Team - Pretty Boyz" textFill="WHITE">
+                            <font>
+                                <Font size="15.0" />
+                            </font></Label>
+                    </children>
+                </Pane>
+            </top>
+        </BorderPane>
+    </children>
+</AnchorPane>

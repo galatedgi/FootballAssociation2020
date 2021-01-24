@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="365.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Referee">
+    <children>
+        <BorderPane fx:id="MainBorder" prefHeight="365.0" prefWidth="420.0" style="-fx-background-color: #303030;">
+            <bottom>
+                <HBox prefHeight="30.0" prefWidth="420.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#ShowUpdateInfo" prefHeight="27.0" prefWidth="109.0" style="-fx-background-color: #303030; -fx-border-color: #282828; -fx-text-fill: #ffffff; -fx-border-radius: 24;" text="Update Info">
+                            <HBox.margin>
+                                <Insets bottom="15.0" left="95.0" right="10.0" />
+                            </HBox.margin></Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#ShowGamesScreen" prefHeight="27.0" prefWidth="103.0" style="-fx-background-color: #303030; -fx-text-fill: #ffffff; -fx-border-color: #282828; -fx-border-radius: 24;" text="Games" HBox.hgrow="NEVER">
+                            <HBox.margin>
+                                <Insets bottom="15.0" />
+                            </HBox.margin></Button>
+                    </children>
+                </HBox>
+            </bottom>
+            <center>
+                <VBox prefHeight="217.0" prefWidth="408.0" BorderPane.alignment="CENTER" />
+            </center>
+            <top>
+                <Label fx:id="TopLabel" prefHeight="38.0" prefWidth="187.0" text="Referee Section" textFill="WHITE" BorderPane.alignment="CENTER">
+                    <font>
+                        <Font size="26.0" />
+                    </font>
+                    <BorderPane.margin>
+                        <Insets top="10.0" />
+                    </BorderPane.margin>
+                </Label>
+            </top>
+        </BorderPane>
+    </children>
+</AnchorPane>

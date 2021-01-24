@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="230.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Login">
+    <children>
+        <BorderPane prefHeight="264.0" prefWidth="500.0" style="-fx-background-color: #303030;">
+            <bottom>
+                <HBox prefHeight="42.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#RegisterAttempt" prefHeight="20.0" prefWidth="131.0" style="-fx-background-color: #303030; -fx-border-color: #252525; -fx-border-radius: 15;" text="Register" textFill="WHITE">
+                            <VBox.margin>
+                                <Insets left="185.0" top="15.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                       <BorderPane.margin>
+                          <Insets left="175.0" />
+                       </BorderPane.margin>
+                     <HBox.margin>
+                        <Insets left="185.0" top="5.0" />
+                     </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+            </bottom>
+            <center>
+                <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Label alignment="CENTER" prefHeight="17.0" prefWidth="195.0" text="Username" textFill="WHITE">
+                            <VBox.margin>
+                                <Insets left="150.0" right="150.0" top="5.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="usernameReg" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="20.0" style="-fx-background-radius: 15;">
+                            <VBox.margin>
+                                <Insets left="150.0" right="150.0" top="5.0" />
+                            </VBox.margin>
+                        </TextField>
+                        <Label alignment="CENTER" prefHeight="17.0" prefWidth="195.0" text="Password" textFill="WHITE">
+                            <VBox.margin>
+                                <Insets left="150.0" right="150.0" top="5.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="passwordReg" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="20.0" style="-fx-background-radius: 15;">
+                            <VBox.margin>
+                                <Insets left="150.0" right="150.0" top="5.0" />
+                            </VBox.margin>
+                        </TextField>
+                        <Label alignment="CENTER" prefHeight="17.0" prefWidth="195.0" text="ID" textFill="WHITE">
+                            <VBox.margin>
+                                <Insets left="150.0" right="150.0" top="5.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="idReg" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="20.0" style="-fx-background-radius: 15;">
+                            <VBox.margin>
+                                <Insets left="150.0" right="150.0" top="5.0" />
+                            </VBox.margin>
+                        </TextField>
+                        <Label alignment="CENTER" prefHeight="17.0" prefWidth="195.0" text="Full Name" textFill="WHITE">
+                            <VBox.margin>
+                                <Insets left="150.0" right="150.0" top="5.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="fullnameReg" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="20.0" style="-fx-background-radius: 15;">
+                            <VBox.margin>
+                                <Insets left="150.0" right="150.0" top="5.0" />
+                            </VBox.margin>
+                        </TextField>
+                    </children>
+                </VBox>
+            </center>
+        </BorderPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="236.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Assteam">
+    <children>
+        <VBox prefHeight="236.0" prefWidth="420.0" style="-fx-background-color: #303030;">
+            <children>
+                <Label prefHeight="28.0" prefWidth="67.0" text="Teams:" textFill="WHITE">
+                    <VBox.margin>
+                        <Insets left="175.0" top="10.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font size="19.0" />
+                    </font>
+                </Label>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="TeamTable" layoutX="31.0" prefHeight="152.0" prefWidth="361.0">
+                    <columns>
+                      <TableColumn fx:id="TeamNameCol" prefWidth="145.0" text="Team Name" />
+                      <TableColumn fx:id="TeamOwnerCol" prefWidth="112.0" text="Team Owner" />
+                        <TableColumn fx:id="StadiumCol" prefWidth="103.0" text="Stadium" />
+                    </columns>
+                  </TableView>
+               </children>
+            </Pane>
+            <HBox prefHeight="64.0" prefWidth="420.0">
+               <children>
+                      <Button mnemonicParsing="false" onAction="#AddNewTeam" prefHeight="13.0" prefWidth="116.0" style="-fx-background-color: #303030; -fx-border-color: #252525; -fx-border-radius: 15;" text="Add new Team" textFill="WHITE">
+                          <font>
+                              <Font size="13.0" />
+                          </font>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="155.0" />
+                     </HBox.margin>
+                      </Button>
+               </children>
+            </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
